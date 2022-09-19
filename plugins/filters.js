@@ -119,10 +119,10 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
     if(Config.STICKERP){
     let banned = jid.find( Jid => Jid === message.jid);
     if(banned !== undefined) return
-    if (!!message.mention && message.mention[0] == '919946432377@s.whatsapp.net') {
-await message.client.sendMessage(message.jid, fs.readFileSync('./media/stickers/p3r3.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted : message.data, ptt: false})
+    if (!!message.mention && message.mention[0] == '91919037752256@s.whatsapp.net') {
+await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/Alive.mp3'), MessageType.sticker, { mimetype: Mimetype.webp, quoted : message.data, ptt: false})
     }
-const array = ['myre','naanam','nadakkatte','nee alle','night','njan','number','Ok','oombi','ooo','paavam','Pattumo','pedicho','pever','pidi','pikachu','Pikachu','Pm','poda','Police','Poocha','Pova','powersh','powli','poyi','Rashmika','remove','sad','Save','saved','scene','Sed','setth','shaad','sheri','sho','Shoo','shut','Smile','song','Sry','STK-20210707-WA0605','tag','teach','test','thech','think','thund','Udayipp','uff','umma','uyir','Vaa','vada','Vannu','vibe','Vijay','yo','ys','z','uff','umma','aara','alla','Alone','ano','anthas','Ariyo','Ayin','Bie','bye','Cute','Di','eh','girls','Hoi','mama','Mm','Myr','Sed']
+const array = ['myre','naanam','nadakkatte','nee alle','night','njan','number','Ok','oombi','ooo','paavam','Pattumo','pedicho','pever','pidi','pikachu','Pikachu','Pm','poda','Police','Poocha','Pova','powersh','powli','poyi','Rashmika','remove','sad','Save','saved','scene','Sed','setth','shaad','sheri','sho','Shoo','shut','Smile','song','Sry','tag','teach','test','thech','think','thund','Udayipp','uff','umma','uyir','Vaa','vada','Vannu','vibe','Vijay','yo','ys','z','uff','umma','aara','alla','Alone','ano','anthas','Ariyo','Ayin','Bie','bye','Cute','Di','eh','girls','Hoi','mama','Mm','Myr','Sed','Aa','Dee','Alive','Hlo','Hi','hii','Morning','😘','Mm','Chetta']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
